@@ -1296,22 +1296,22 @@ cde {
 }
 
 .info_h:before {
-	content: '';
-	position: absolute;
-	display: block;
-	width: 40px;
-	height: 40px;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-image: url(https://i.ibb.co/rv8v8MF/edit.png);
-	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	transform: translateX(-50%);
-	border: 7px solid #f6f6f6;
-	border-radius: 50px;
-	margin-top: -9px;
-	margin-right: 65px;
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://i.ibb.co/rv8v8MF/edit.png);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border: 7px solid #eceff2;
+    border-radius: 50px;
+    margin-top: -9px;
+    margin-right: 91px;
 }
 
 /*--------info1  ----*/
