@@ -1730,3 +1730,100 @@ html[dir="rtl"] .title-text {
 .holoLink:hover::after { transform: rotate(360deg) scale(1.3); }
 
 .button-container{width:200px;margin:150px auto;position:relative}.download-btn{display:block;height:50px;width:100%;border:none;outline:none;cursor:pointer;color:#fff;font-family:'Helvetica','Arial',sans-serif;font-size:17px;line-height:50px;text-decoration:none;text-align:center;text-transform:uppercase;background:#2ecc71;border-radius:10px;box-shadow:2px 2px 8px rgba(0,0,0,.2);position:relative;z-index:2;transition:all .3s ease}.tooltip{background:#34495e;display:block;height:40px;width:180px;border-radius:10px;box-shadow:2px 2px 8px rgba(0,0,0,.2);text-align:center;font-family:'Helvetica','Arial',sans-serif;font-size:12px;color:#fff;position:absolute;right:10px;z-index:1;transition:all .5s ease}.top-tooltip{line-height:40px;bottom:100%;margin-bottom:-50px}.bottom-tooltip{line-height:40px;top:100%;margin-top:-50px}.button-container:hover .top-tooltip{margin-bottom:-10px}.button-container:hover .bottom-tooltip{margin-top:-10px}.download-btn:active{background:#3498db;transform:translateY(2px)}.button-container:active .top-tooltip{margin-bottom:-20px}.button-container:active .bottom-tooltip{margin-top:-20px}.download-btn:hover{background:#27ae60}
+.wrapper {
+            max-width: 900px;
+            width: 100%;
+            margin: 20px;
+            padding: 25px 30px;
+            border-radius: 15px;
+            background: #fff;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .wrapper header {
+            font-size: 28px;
+            font-weight: 700;
+            padding-bottom: 20px;
+            color: #4b7bec;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .wrapper nav {
+            position: relative;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 0 5px;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+        .wrapper nav label {
+            display: block;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            line-height: 70px;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+            color: #555;
+            font-size: 18px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .wrapper nav label:hover {
+            color: #4b7bec;
+        }
+        #html:checked ~ nav label.html,
+        #css:checked ~ nav label.css,
+        #js:checked ~ nav label.js {
+               color: #ffffff;
+               background: #d00d37;
+        }
+        nav label i {
+            padding-left: 10px;
+            font-size: 20px;
+        }
+        nav .slider {
+            position: absolute;
+            height: 100%;
+            width: calc(100% / 3);
+            left: 0;
+            top: 0;
+            z-index: 0;
+            background: #4b7bec;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            border-radius: 8px;
+        }
+        input[type="radio"] {
+            display: none;
+        }
+        #css:checked ~ nav .slider {
+            left: calc(100% / 3);
+        }
+        #js:checked ~ nav .slider {
+            left: calc(2 * (100% / 3));
+        }
+        div .content {
+            display: none;
+            background: #fff;
+            animation: fadeIn 0.6s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        #html:checked ~ div .content-1,
+        #css:checked ~ div .content-2,
+        #js:checked ~ div .content-3 {
+            display: block;
+        }
+        .content-inner {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+        }
+       
