@@ -1825,5 +1825,25 @@ html[dir="rtl"] .title-text {
             background: #f8f9fa;
             border-radius: 10px;
             border: 1px solid #e0e0e0;
+   /*         dyra          */
+              .dyra {
+            list-style: none;
+            padding: 0;
         }
-       
+
+        .dyra > li {
+            margin-bottom: 3px;
+            position: relative;
+            margin-left: 35px;
+        }
+
+        .dyra > li::before {
+            content: '';
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ff2c00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5 9.51472 14.4853 7.5 12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5Z'/%3E%3Cpath d='M2 12H7'/%3E%3Cpath d='M17 12H22'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            height: 14px;
+            width: 14px;
+            left: -25px;
+            top: 5px;
+            position: absolute;
+        }
